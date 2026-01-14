@@ -1,0 +1,27 @@
+{
+  "name": "studysync-backend",
+  "version": "1.0.0",
+  "description": "StudySync Backend Server with MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "setup": "node setup-mongodb.js",
+    "setup-with-data": "node setup-mongodb.js --create-test-data",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["studysync", "education", "collaboration"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.9.4",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
